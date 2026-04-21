@@ -138,8 +138,7 @@ while cap.isOpened():
         draw_box(display, x1, y1, x2, y2, conf, i)
 
     # Smooth the count
-    if frame_count % DETECT_EVERY_N == 0:
-        history.append(count)
+    if frame_count % DETECT_EVERY_N == 0: history.append(count)
     stable = round(sum(history) / len(history)) if history else 0
 
     draw_hud(display, stable)
