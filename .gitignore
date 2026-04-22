@@ -4,4 +4,4 @@ runs/
 *.pt
 *.mp4
 ngrok.exe
-.env
+.envmain.py 
